@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Random from './components/Random';
+import Search from './components/Search';
+import Spinner from "./components/Spinner.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div className='w-full h-full flex flex-col'>
+    <div className='bg-white-300 w-[1280px] uppercase h-20 text-3xl font-bold rounded-lg border text-center mt-10 flex justify-center items-center ml-20'>
+      Random gifs
     </div>
+    <Random/>
+    <Search/>
+   </div>
   );
 }
 
